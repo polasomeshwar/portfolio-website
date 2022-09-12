@@ -1,0 +1,80 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+.imAndname{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#pr_img{
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+table{
+    width: 100%;
+}
+table,th,td{
+    border: 1px solid black;
+}
+th{
+    background-color: black;
+    color: white;
+}
+.skill{
+    padding: 0;
+}
+.skill ul{
+    list-style: none;
+}
+.skill li{
+    display: inline-block;
+    width: fit-content;
+    margin: 5px;
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+.urls ul{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+.urls li{
+    display: inline;
+    margin: 10px;
+}
+.urls img{
+    width: 30px;
+    height: 30px;
+}
+h2{
+    background-color:black;
+    color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+.worke{
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+}
+.worke h3{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
+.worke ul{
+    margin: 0;
+    padding-right: 7px;
+}
+.single-exp{
+    display: inline-block;
+}
