@@ -1,22 +1,44 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
+html{
+    scroll-behavior: smooth;
 }
 .imAndname{
     text-align: center;
-    background-color: black;
+    border-radius: 10px;
+    font-size: 15px;
     color: white;
+    background-image: url(back-img.jpg);
+}
+.about p{
+    background-color:  white;
+    color: black;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    background-color: black;
+}
+h1,#namespan{
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+}
+p{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
 #pr_img{
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 3px solid black;
 }
 table{
     width: 100%;
 }
 table,th,td{
-    border: 1px solid black;
+    border: 1px solid white;
+    color: white;
 }
 th{
     background-color: black;
@@ -32,15 +54,14 @@ th{
     display: inline-block;
     width: fit-content;
     margin: 5px;
-    border: 2px solid;
+    font-weight: bold;
     padding: 5px;
     border-radius: 5px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .urls ul{
     text-align: center;
-    background-color: black;
     padding: 10px;
 }
 .urls li{
@@ -52,17 +73,16 @@ th{
     height: 30px;
 }
 h2{
-    background-color:black;
     color: white;
-    border-radius: 10px;
     padding-left: 20px;
     padding-top: 5px;
     padding-bottom:5px;
 }
-.worke{
+.worke .box{
     border-radius: 10px;
     display: flex;
     width: fit-content;
+    text-align: center;
 }
 .worke h3{
     background-color: black;
@@ -73,8 +93,30 @@ h2{
 }
 .worke ul{
     margin: 0;
-    padding-right: 7px;
+    padding-right: 5px;
+    color: white;
+}
+.worke ul>li{
+    margin : 10px
 }
 .single-exp{
     display: inline-block;
+}
+#navigationHead nav > a{
+    padding: 10px;
+    margin: 7px;
+    background: white;
+    color: black;
+    display:inline-block;
+    border-radius: 2px;
+    text-decoration: none;
+}
+#navigationHead nav>a:hover
+{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+#navigationHead nav{
+    text-align: center;
 }
