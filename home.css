@@ -1,6 +1,11 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background: black;
+    color: white;
+    box-sizing: border-box;
+}
 .imAndname{
     text-align: center;
     border-radius: 10px;
@@ -15,7 +20,6 @@ html{
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
-    background-color: black;
 }
 h1,#namespan{
     font-weight: bold;
@@ -40,15 +44,12 @@ table,th,td{
     border: 1px solid white;
     color: white;
 }
-th{
-    background-color: black;
-    color: white;
-}
 .skill{
     padding: 0;
 }
 .skill ul{
     list-style: none;
+    padding: 0;
 }
 .skill li{
     display: inline-block;
@@ -78,29 +79,21 @@ h2{
     padding-top: 5px;
     padding-bottom:5px;
 }
-.worke .box{
-    border-radius: 10px;
-    display: flex;
-    width: fit-content;
-    text-align: center;
-}
-.worke h3{
-    background-color: black;
-    border-radius: 10px;
-    color: white;
-    margin: 0;
-    padding: 5px;
-}
-.worke ul{
-    margin: 0;
-    padding-right: 5px;
-    color: white;
-}
-.worke ul>li{
-    margin : 10px
+.worke{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
 }
 .single-exp{
-    display: inline-block;
+    text-align: center;
+    border: 4px solid white;
+    border-radius: 15px;
+}
+.single-exp ul{
+    list-style: none;
+    padding: 0;
 }
 #navigationHead nav > a{
     padding: 10px;
@@ -119,4 +112,45 @@ h2{
 }
 #navigationHead nav{
     text-align: center;
+}
+#projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,150px);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.single-proj{
+    text-align: center;
+    display: grid;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    border: 4px solid white;
+    background: white;
+    color: black;
+}
+.single-proj:hover{
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.single-proj h3{
+    margin: 5px;
+}
+.single-proj img{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 2px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+}
+.single-proj:active{
+    transform: translateY(1px);
+}
+a{
+    text-decoration: none;
 }
